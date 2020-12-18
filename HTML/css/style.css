@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone-image img {
+    height: 50rem;
+    border-radius: 70px;
+}
+
+.ig-logo {
+   height: 7.5rem;
+}
+
+#account-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.container:nth-child(1) {
+    min-height: 19rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 10rem;
+}
+
+.login {
+    margin-top: 2rem;
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.lower-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download:nth-child(1) {
+    background-image: url('../img/get-on-app.png');
+}
+
+.download:nth-child(2) {
+    background-image: url('../img/get-it-on-google-play-badge.png');
+}
+
+/* Responsivity */
+
+@media (max-width: 1024px) {
+    .main-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+    .main-wrapper {
+        width: 90%;
+    }
+
+    .phone-image {
+        display: none;
+    }
+
+    #account-area {
+        width: 100%;
+    }
+
+    .container {
+        border: 1px solid transparent;
+    }
+}
